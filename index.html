@@ -6,13 +6,13 @@
     <title>Site Beatriz</title>
     <style>
         body{
-            background-color: #324d47;
+            background-color: #324d47; /*configuração inicial para o corpo*/
             padding: 0;
             margin: 0;}
 
         main{
             display: grid;
-            grid-template-rows: auto 1fr auto;
+            grid-template-rows: auto 1fr auto; /*função para separar o footer e ficar mais harmonico.*/
             min-height: 100vh;
             margin: 0;}   
 
@@ -22,7 +22,7 @@
             text-align: center;}  
 
         header{
-            background-image: url(fundo.jpg);
+            background-image: url(fundo.jpg);  /*criação de menu e estilização.*/
             background-size: cover;
             background-position: center;
             color: #BAD1CC;
@@ -38,7 +38,7 @@
 
         nav ul li a {
             display: block;
-            background-color: #617873;
+            background-color: #617873; /*estilização para mudar de cor os botoes do menu.*/
             text-decoration: none;
             padding: 10px 15px;
             border: 1px solid #BAD1CC;
@@ -47,22 +47,22 @@
             font-family: 'Courier New', Courier, monospace;}
 
         nav ul li a:hover{
-            background-color: #324d47;}
+            background-color: #324d47;} 
 
         nav ul li a:link, a:visited{color: #BAD1CC;}  
         
         footer{
-            background-color: #1D3331;
+            background-color: #1D3331; /*final da pagina*/
             color: #BAD1CC;
             text-align: center;}
     </style>
 
 </head>
 <body>
-    <header>
+    <header> <!--Links internos do menu-->
         <nav>
             <ul none>
-                <li><a href="sobremim.html">Sobre Mim</a></li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>  
                 <li><a href="formacao.html">Formação</a></li>
                 <li><a href="portforio.html">Portfólio</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -77,7 +77,7 @@
         <p>Obrigada por visitar! Volte Sempre!</p>
         </footer>
 </body>
-    <script> //função de alerta quando abre o site
+    <script> //função de alerta quando abre o site 
         window.onload = function() { 
             alert("Seja Bem-vindo!");};
     </script>
