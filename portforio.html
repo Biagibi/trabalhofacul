@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <style>
+        body{
+            background-color: #324d47;
+            padding: 0;
+            margin: 0;}
+
+        h1, p{
+            color: #BAD1CC;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;}
+         
+        p{  
+            border-width: 2px;
+            border-style: solid;
+            border-color: #617873;
+            text-align: center;}    
+
+        header{
+            background-image: url(fundo.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #BAD1CC;
+            padding: 40px;}
+        nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;}
+
+        nav ul li{margin: 0 10px;}
+
+        nav ul li a {
+            display: block;
+            background-color: #617873;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid #BAD1CC;
+            border-radius: 5px;
+            transition: .5s;
+            font-family: 'Courier New', Courier, monospace;}
+        
+        .link2 {
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            color: #324d47;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: block; 
+            width: 280px; 
+            padding: 20px; 
+            background-color: #BAD1CC; 
+            border: 1px solid #eee; 
+            border-radius: 8px; 
+            text-align: center;}    
+
+        nav ul li a:hover{
+            background-color: #324d47;}
+
+        nav ul li a:link, a:visited{color: #BAD1CC;}             
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul none>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portforio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <h1>Meu Portfólio</h1>
+    <p>Veja abaixo alguns projetos, não realizei muitos até então.</p>
+    <a class="link2"  href="https://github.com/Biagibi/Projeto-Cordel.git" target="_blank" rel="external">Projeto 1</a><br>
+    <a class="link2"  href="https://github.com/Biagibi/Javascript-Biagibi.git" target="_blank" rel="external">Projeto 2</a>
+
 </body>
 </html>
