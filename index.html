@@ -10,23 +10,32 @@
             padding: 0;
             margin: 0;}
 
-        h1, p{color: #BAD1CC;
+        main{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            margin: 0;}   
+
+        h1, p{
+            color: #BAD1CC;
             font-family: 'Courier New', Courier, monospace;
-            text-align: center;}    
+            text-align: center;}  
+
         header{
             background-image: url(fundo.jpg);
             background-size: cover;
             background-position: center;
             color: #BAD1CC;
-            padding: 20px;}
+            padding: 40px;}
+
         nav ul{
             list-style: none;
             padding: 0;
             margin: 0;
-            display: flex;
-        }
-        nav ul li{
-            margin: 0 10px;}
+            display: flex;}
+
+        nav ul li{margin: 0 10px;}
+
         nav ul li a {
             display: block;
             background-color: #617873;
@@ -34,13 +43,20 @@
             padding: 10px 15px;
             border: 1px solid #BAD1CC;
             border-radius: 5px;
-        }
-        nav ul li a:hover{
-            background-color: #324d47;
-        }
-        nav ul li a:link, a:visited{color: #BAD1CC;}    
+            transition: .5s;
+            font-family: 'Courier New', Courier, monospace;}
 
+        nav ul li a:hover{
+            background-color: #324d47;}
+
+        nav ul li a:link, a:visited{color: #BAD1CC;}  
+        
+        footer{
+            background-color: #1D3331;
+            color: #BAD1CC;
+            text-align: center;}
     </style>
+
 </head>
 <body>
     <header>
@@ -53,7 +69,12 @@
             </ul>
         </nav>
     </header>
-    <h1>Bem-vindo ao meu Portfólio Pessoal.</h1>
-    <p>Navegue através do site e menu para saber mais sobre mim...</p>
+    <main>
+        <h1>Bem-vindo ao meu Portfólio Pessoal.</h1>
+        <p>Navegue através do site e menu para saber mais sobre mim...</p>
+   </main>
+        <footer>
+        <p>Obrigada por visitar! Volte Sempre!</p>
+        </footer>
 </body>
 </html>
